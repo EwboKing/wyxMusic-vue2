@@ -1,0 +1,71 @@
+@imgurl:'../../imgs';
+// 标签容器
+  .tag-wrap {
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C10D0C;
+    padding-right: 10px;
+
+    // 热门推荐
+    .tag-title {
+      // 圆环图标
+      background: url("@{imgurl}/index.png") no-repeat 0 9999px;
+      background-position: -225px -156px;
+
+      // 热门推荐文本
+      .title-text {
+        // padding-left: 34px;
+        margin-left: 34px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    // 标签元素栏
+    .tags {
+      display: flex;
+      margin: 7px 0 0 -225px;
+
+      // 伪类添加竖杆
+      .tag-item {
+        margin-top: 2px;
+        color: #666;
+
+        // cursor: pointer;
+        &:after {
+          content: "";
+          margin-left: 13px;
+          padding-left: 13px;
+          border-left: 1px solid #c0c4cc;
+          height: 12px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        // 去除最后一个竖杆
+        &:last-child:after {
+          height: 0;
+        }
+      }
+
+    }
+
+    .more {
+      margin-top: 10px;
+
+      // 箭头图标
+      .icon-more {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+        margin-left: 6px;
+        // 箭头图标
+        background: url("@{imgurl}/index.png") no-repeat 0 9999px;
+        background-position: 0 -240px;
+      }
+
+    }
+
+  }

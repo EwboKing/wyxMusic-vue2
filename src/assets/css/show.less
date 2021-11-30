@@ -1,0 +1,125 @@
+p{
+	white-space: nowrap;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	.span{
+		cursor: pointer;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.alia{
+		color: #AEAEAE;
+		cursor: text;
+	}
+}
+
+.btns,.opts,.show{
+	display: flex;
+}
+
+.fcolor{
+	color: #0c73c2 !important;
+}
+
+.bg{
+	width: 16px;
+	height: 16px;
+	margin-right: 7px;
+	background: url(../imgs/playerbar/playlist.png) no-repeat;
+}
+// 添加
+.icon-add{
+	width: 13px;
+	height: 13px;
+	background-position: 0 -700px;
+	
+	&:hover{
+		background-position: -22px -700px;
+	}
+}
+
+// 收藏
+.icon-collect{
+	background-position: -24px 0;
+	
+	&:hover{
+		background-position: -24px -20px;
+	}
+}
+// 分享
+.icon-share{
+	width: 14px;
+	background-position: 0 0;
+	
+	&:hover{
+		background-position: 0 -20px;
+	}
+}
+// 下载
+.icon-download{
+	width: 14px;
+	background-position: -57px -50px;
+	
+	&:hover{
+		background-position: -80px -50px;
+	}
+}
+// 删除
+.icon-delete{
+	width: 13px;
+	background-position: -51px 0;
+	
+	&:hover{
+		background-position: -51px -20px;
+	}
+}
+
+.opts {
+
+	div {
+		width: 18px;
+		height: 16px;
+		margin-right: 7px;
+		cursor: pointer;
+	}
+
+	// 添加
+	.icon-add {
+		width: 13px;
+		height: 13px;
+		background-position: 0 -700px;
+
+		&:hover {
+			background-position: -22px -700px;
+		}
+	}
+
+	// 收藏
+	.icon-collect {
+		background-position: 0 -174px;
+
+	    &:hover {
+			background-position: -20px -174px;
+	    }
+	}
+
+	// 分享
+	.icon-share {
+	    background-position: 0 -195px;
+
+	    &:hover {
+			background-position: -20px -195px;
+	    }
+	}
+
+	// 下载
+	.icon-download {
+		background-position: -81px -174px;
+
+		&:hover {
+			background-position: -104px -174px;
+	    }
+	}
+}

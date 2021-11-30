@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				height: 100px;
+				background-color: #40A9FF;
+			}
+
+			.box-wrap {
+				background-color: blueviolet;
+			}
+
+			.box-bar {
+				margin: 0 auto;
+				width: 600px;
+				height: 100px;
+				background-color: pink;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			.boxx{
+				display: flex;
+				width: 400px;
+				margin-right: 40px;
+				justify-content: space-around;
+			}
+			.logo {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+
+			.box2 {
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+			}
+
+			.box3 {
+				width: 100px;
+				height: 100px;
+				background-color: black;
+			}
+
+			.box4 {
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+		</style>
+		<script>
+		function f (num) {
+			const newNum=['','']
+			if(num<100000){
+				return num
+			}else{
+				newNum[0]=parseInt(num/10000)
+				newNum[1]='万'
+				return newNum.join('')
+			}
+		}
+		console.log(f(103000))
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box-wrap">
+				<div class="box-bar">
+					<div class="logo"></div>
+					<div class="boxx">
+						<div class="box2"></div>
+						<div class="box3"></div>
+						<div class="box4"></div>
+					</div>
+					
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+// 内容容器
+.content-card {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.content-wrap {
+		width: 140px;
+		// height: 204px;
+		
+		.div-box{
+			position: relative;
+			font-size: 12px;
+		}
+		
+		img {
+			height: 140px;
+		}
+
+		p {
+			color: #000;
+			// height: 40px;
+			margin: 8px 0 3px 0;
+		}
+		
+		.jp{
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 50px;
+		  height: 50px;
+		  background-position: -80px -220px;
+		}
+		.p{
+		  overflow: hidden;
+		  white-space: nowrap;
+		  text-overflow: ellipsis;
+		}
+		// 创作者
+		.p-c{
+		  margin: 0 !important;
+		  font-size: 12px;
+		  // display: flex;
+		  // justify-content: flex-start;
+		  .p;
+		  
+		  .creator{
+			  .p;
+			  margin-right: 2px;
+			  max-width: 75%;
+			  display: inline-block;
+			  vertical-align: middle;
+			  color: #666666;
+			  cursor: pointer;
+			  // .p;
+			  &:hover{
+				  text-decoration: underline;
+			  }
+		  }
+		  .img{
+			  width: 13px;
+			  height: 13px;
+			  display: inline-block;
+			  vertical-align: middle;
+		  }
+		}
+		
+		// 图片遮罩
+		.img-mask {
+			position: absolute;
+			width: 140px;
+			height: 113px;
+			background: url(../../assets/imgs/coverall.png) no-repeat;
+		}
+
+		// 底部播放遮罩
+		.mask-bottom {
+			position: absolute;
+			width: 140px;
+			background: url(../../assets/imgs/coverall.png) no-repeat;
+			background-position: 0 -537px;
+
+			// 耳机图标
+			.listen-icon {
+				float: left;
+				margin: 9px 5px 9px 10px;
+				width: 14px;
+				height: 11px;
+				background: url(../../assets/imgs/iconall.png);
+				background-position: 0 -24px;
+			}
+
+			// 播放图标
+			.play-icon {
+				position: absolute;
+				right: 10px;
+				bottom: 5px;
+				width: 16px;
+				height: 17px;
+				background: url(../../assets/imgs/iconall.png);
+				background-position: 0 0;
+			}
+
+			.play-icon:hover {
+				background-position: 0 -60px;
+			}
+
+			.play-num {
+				float: left;
+			}
+		}
+	}
+}

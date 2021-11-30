@@ -5,7 +5,8 @@
         <p>
           <span v-for="(item,index) in dataName" :key="index" :class="{'fcolor' : item.name === keyword}">
             {{leftChar}}<span class="span" @click="goDetail(item.id)">{{item.name}}</span>{{rightChar}}
-            <span class="alia" v-if="dataPath === 'name' && dataRow.alias.length" :title="dataRow.alias[0]"> - ({{dataRow.alias[0]}})</span>
+            <span class="alia" v-if="dataPath === 'name' && dataRow.alias.length" :title="dataRow.alias[0]"> -
+              ({{dataRow.alias[0]}})</span>
             <em>{{slash(index, dataName.length) }}</em>
           </span>
         </p>
@@ -15,7 +16,8 @@
     <div class="btns" v-else>
       <div class="opts" :style="{'visibility': rowIndex === curIdx ? 'visible' : 'hidden' }">
         <!-- 添加 -->
-        <div class="icon-add bg-icon" title="添加到播放列表" @click="addToPlaylist(dataRow.id,dataRow.name,dataRow.artists,dataRow.album,dataRow.duration)"></div>
+        <div class="icon-add bg-icon" title="添加到播放列表"
+          @click="addToPlaylist(dataRow.id,dataRow.name,dataRow.artists,dataRow.album,dataRow.duration)"></div>
         <!-- 收藏 -->
         <div class="icon-collect bg-table" title="收藏" @click="sss"></div>
         <!-- 分享 -->
@@ -28,7 +30,9 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import {
+  mapGetters
+} from 'vuex'
 export default {
   name: 'ShowReslut',
   props: {
